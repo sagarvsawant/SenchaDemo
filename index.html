@@ -1,0 +1,411 @@
+<!DOCTYPE HTML>
+<html manifest="" lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Synerzip</title>
+    <style type="text/css">
+        /**
+         * Example of an initial loading indicator.
+         * It is recommended to keep this as minimal as possible to provide instant feedback
+         * while other resources are still being loaded for the first time
+         */
+        html, body {
+            height: 100%;
+        }
+
+        #appLoadingIndicator {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -10px;
+            margin-left: -50px;
+            width: 100px;
+            height: 20px;
+
+        }
+
+        #appLoadingIndicator > * {
+            background-color: #003370;
+            float: left;
+            height: 20px;
+            margin-left: 11px;
+            width: 20px;
+            -webkit-animation-name: appLoadingIndicator;
+            -webkit-border-radius: 13px;
+            -webkit-animation-duration: 1.8s;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-direction: linear;
+            opacity: 0.3
+        }
+
+        #appLoadingIndicator > :nth-child(1) {
+            -webkit-animation-delay: 0.18s;
+        }
+
+        #appLoadingIndicator > :nth-child(2) {
+            -webkit-animation-delay: 0.42s;
+        }
+
+        #appLoadingIndicator > :nth-child(3) {
+            -webkit-animation-delay: 0.54s;
+        }
+
+        @-webkit-keyframes appLoadingIndicator{
+            0% {
+                opacity: 0.3
+            }
+
+            50% {
+                opacity: 1;
+                background-color:#1985D0
+            }
+
+            100% {
+                opacity:0.3
+            }
+        }
+
+        div#ext-element-12.x-innerhtml{
+            font-size: 27px !important;
+        }
+        div#ext-element-56.x-innerhtml{
+            font-size: 27px !important;
+        }
+        div#ext-element-102.x-innerhtml{
+            font-size: 27px !important;
+        }
+        div#ext-element-149.x-innerhtml{
+            font-size: 27px !important;
+        }
+
+        div#ext-container-32.x-container.x-toolbar-dark.x-toolbar.x-navigation-bar.x-docked-top{
+           display: none !important;
+        }
+
+        div#ext-titlebar-4.x-container.x-toolbar-dark.x-toolbar.x-navigation-bar.x-docked-top{
+            display: none !important;
+        }
+
+        div#ext-titlebar-6.x-container.x-toolbar-dark.x-toolbar.x-navigation-bar.x-docked-top{
+            display: none !important;
+        }
+
+
+    .homePageContainer h3{
+        padding-bottom: 16px;
+        text-align: center;
+        font-family: -webkit-body;
+        /*font-style: in;*/
+        border-bottom: 2px solid #F4CC00 !important;
+        }
+
+        .homePageContainer h4{
+              color: #65909A;
+              text-align:center;
+              font-size: 21pt;
+            font-family: -webkit-body;
+            padding-bottom: 10px;
+          }
+
+        .homePageContainer li{
+            padding-left: 20px;
+            background-image: url('resources/images/yellow-arrow.gif');
+            background-repeat: no-repeat;
+            background-position: 0 .5em, 0,0,0;
+            font-size: 17px;
+            font-family: -webkit-body;
+            color: #943C31;
+
+        }
+
+        div#ext-element-32.x-inner.x-carousel-inner.homeCarousel{
+            padding-top: 25px;
+        }
+
+        .founders img{
+            /*border-bottom-left-radius:10pt;*/
+            /*border-bottom-right-radius: 10pt;*/
+            /*border-top-left-radius: 10pt;*/
+            /*border-top-right-radius: 10pt;*/
+            margin-top: 10pt;
+            height: 150pt;
+            width: 150pt;
+        }
+
+        .founders h4{
+            font-size: 12pt;
+            font-family: -webkit-body;
+            color: blue;
+            text-align: center;
+        }
+        .founders li {
+            margin: 21px;
+            font-size: 18px;
+            font-family: -webkit-body;
+            font-style: normal;
+    }
+
+    .x-carousel-indicator span {
+        /*background-color: #08703A  !important;*/
+
+    }
+
+
+
+        .place-entry img{
+            width: 80px;
+            height: 30px;
+            padding: 5px;
+            /*border: 1px solid #000000;*/
+            float: left;
+        }
+        .place-entry h1{
+            float: left;
+            margin-left: 10px;
+            font-size: 16pt;
+            font-family: -webkit-body;
+        }
+        .place-entry h3{
+            clear: both;
+            margin-left: 50px;
+        }
+
+
+
+
+    .details h1 {
+        margin-left: 50px;
+        font-size: 22pt;
+        /*font-style: inherit;*/
+        clear: both;
+        font-family: -webkit-body;
+        color: brown;
+        padding-bottom: 5px;
+        padding-top: 7px;
+    }
+
+    .details img {
+        width: 260px;
+        height: 73px;
+        padding: 7px;
+        clear: both;
+        margin-top: 21px;
+        margin-left: 18px;
+        clear: both;
+    }
+
+    .details h3 {
+        clear: both;
+        margin-left: 50px;
+        padding-top: 10px;
+        font-size: 15pt;
+        font-family: -webkit-body;
+        padding-bottom: 10px;
+        padding-right: 16px;
+    }
+
+    .details li {
+        clear: both;
+        margin-left: 50px;
+        font-style: normal;
+        font-family: -webkit-body;
+        color: blue;
+        padding-top: 10px;
+    }
+
+    .contactAddPageContainer ul{
+            padding-left: 10px;
+            background-image: url('resources/images/yellow-arrow.gif');
+            background-repeat: no-repeat;
+            background-position: 0 .5em;
+            font-size: 10pt;
+        font-family: -webkit-body;
+        }
+        .homePageContainer{
+            padding-left: 25px;
+        }
+        .technology a{
+            /*margin-top: 50pt;*/
+            /*height: 100px;*/
+            /*width: 100px;*/
+            padding: 20pt;
+            padding-top: 30px;
+            font-family: -webkit-body;
+            text-align:center;
+        }
+        .technology center{
+            padding-top: 90px;
+        }
+
+    div#ext-tabbar-2.x-container.x-tabbar-dark.x-tabbar x-docked-top{
+
+    }
+
+    div#ext-tabbar-4.x-container.x-tabbar-dark.x-tabbar.x-docked-top{
+
+    }
+
+
+    div#ext-element-47.x-inner.x-tabbar-inner.x-layout-hbox {
+        /*background-color:#3A322C !important;*/
+
+    }
+
+    .zero{
+        padding: 0px !important;margin: 0px !important;
+
+    }
+    .zero1{
+        padding: 9px !important;margin: 0px !important;
+    }
+    #custom{line-height: 7px;}
+
+
+    #list li{
+        list-style: none;
+    }
+
+    .x-item-selected .x-list-item-label
+    {
+        color:#ffffff;
+    }
+
+    div#ext-titlebar-1.x-container.x-toolbar-dark.x-toolbar.x-navigation-bar.x-docked-top{
+
+        /*background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#EBF1F6), color-stop(0%,#ABD3EE), color-stop(51%,#89C3EB), color-stop(100%,#D5EBFB));*/
+        /*background: -webkit-linear-gradient(top, #EBF1F6 0%,#ABD3EE 0%,#89C3EB 51%,#D5EBFB 100%);*/
+        /*background: -o-linear-gradient(top, #EBF1F6 0%,#ABD3EE 0%,#89C3EB 51%,#D5EBFB 100%);*/
+        /*background: -ms-linear-gradient(top, #EBF1F6 0%,#ABD3EE 0%,#89C3EB 51%,#D5EBFB 100%);*/
+        /*background: linear-gradient(to bottom, #EBF1F6 0%,#ABD3EE 0%,#89C3EB 51%,#D5EBFB 100%);*/
+        /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ebf1f6',*/
+
+        /*background: -webkit-gradient(linear, left top, right top, color-stop(0%,#2989d8), color-stop(2%,#7db9e8), color-stop(27%,#1e5799));*/
+        /*background: -webkit-linear-gradient(left, #2989d8 0%,#7db9e8 2%,#1e5799 27%);*/
+        /*background: -o-linear-gradient(left, #2989d8 0%,#7db9e8 2%,#1e5799 27%);*/
+        /*background: -ms-linear-gradient(left, #2989d8 0%,#7db9e8 2%,#1e5799 27%);*/
+        /*background: linear-gradient(to right, #2989d8 0%,#7db9e8 2%,#1e5799 27%);*/
+        /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2989d8', endColorstr='#1e5799',GradientType=1 );*/
+
+        background: -webkit-gradient(linear, left top, right top, color-stop(1%,#7db9e8), color-stop(18%,#2989d8), color-stop(37%,#1e5799));
+        background: -webkit-linear-gradient(left, #7db9e8 1%,#2989d8 18%,#1e5799 37%);
+        background: -o-linear-gradient(left, #7db9e8 1%,#2989d8 18%,#1e5799 37%);
+        background: -ms-linear-gradient(left, #7db9e8 1%,#2989d8 18%,#1e5799 37%);
+        background: linear-gradient(to right, #7db9e8 1%,#2989d8 18%,#1e5799 37%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', endColorstr='#1e5799',GradientType=1 );
+    }
+
+    div#ext-titlebar-2.x-container.x-toolbar-dark.x-toolbar.x-navigation-bar.x-docked-top{
+        background: -webkit-gradient(linear, left top, right top, color-stop(1%,#7db9e8), color-stop(18%,#2989d8), color-stop(37%,#1e5799));
+        background: -webkit-linear-gradient(left, #7db9e8 1%,#2989d8 18%,#1e5799 37%);
+        background: -o-linear-gradient(left, #7db9e8 1%,#2989d8 18%,#1e5799 37%);
+        background: -ms-linear-gradient(left, #7db9e8 1%,#2989d8 18%,#1e5799 37%);
+        background: linear-gradient(to right, #7db9e8 1%,#2989d8 18%,#1e5799 37%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', endColorstr='#1e5799',GradientType=1 );
+    }
+
+    div#ext-titlebar-3.x-container.x-toolbar-dark.x-toolbar.x-navigation-bar.x-docked-top{
+        background: -webkit-gradient(linear, left top, right top, color-stop(1%,#7db9e8), color-stop(18%,#2989d8), color-stop(37%,#1e5799));
+        background: -webkit-linear-gradient(left, #7db9e8 1%,#2989d8 18%,#1e5799 37%);
+        background: -o-linear-gradient(left, #7db9e8 1%,#2989d8 18%,#1e5799 37%);
+        background: -ms-linear-gradient(left, #7db9e8 1%,#2989d8 18%,#1e5799 37%);
+        background: linear-gradient(to right, #7db9e8 1%,#2989d8 18%,#1e5799 37%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', endColorstr='#1e5799',GradientType=1 );
+    }
+
+    div#ext-titlebar-5.x-container.x-toolbar-dark.x-toolbar.x-navigation-bar.x-docked-top{
+        background: -webkit-gradient(linear, left top, right top, color-stop(1%,#7db9e8), color-stop(18%,#2989d8), color-stop(37%,#1e5799));
+        background: -webkit-linear-gradient(left, #7db9e8 1%,#2989d8 18%,#1e5799 37%);
+        background: -o-linear-gradient(left, #7db9e8 1%,#2989d8 18%,#1e5799 37%);
+        background: -ms-linear-gradient(left, #7db9e8 1%,#2989d8 18%,#1e5799 37%);
+        background: linear-gradient(to right, #7db9e8 1%,#2989d8 18%,#1e5799 37%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', endColorstr='#1e5799',GradientType=1 );
+    }
+
+
+        .headerTitle{
+        /*background-color: #457BD3  !important ;*/
+            background: -webkit-gradient(linear, left top, right top, color-stop(1%,#7db9e8), color-stop(18%,#2989d8), color-stop(37%,#1e5799));
+            background: -webkit-linear-gradient(left, #7db9e8 1%,#2989d8 18%,#1e5799 37%);
+            background: -o-linear-gradient(left, #7db9e8 1%,#2989d8 18%,#1e5799 37%);
+            background: -ms-linear-gradient(left, #7db9e8 1%,#2989d8 18%,#1e5799 37%);
+            background: linear-gradient(to right, #7db9e8 1%,#2989d8 18%,#1e5799 37%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', endColorstr='#1e5799',GradientType=1 );
+        }
+
+        div#ext-titlebar-3.x-container.x-toolbar-dark.x-toolbar.x-navigation-bar.x-docked-top{
+        /*background-color: #457BD3  !important ;*/
+            background: -webkit-gradient(linear, left top, right top, color-stop(1%,#7db9e8), color-stop(18%,#2989d8), color-stop(37%,#1e5799));
+            background: -webkit-linear-gradient(left, #7db9e8 1%,#2989d8 18%,#1e5799 37%);
+            background: -o-linear-gradient(left, #7db9e8 1%,#2989d8 18%,#1e5799 37%);
+            background: -ms-linear-gradient(left, #7db9e8 1%,#2989d8 18%,#1e5799 37%);
+            background: linear-gradient(to right, #7db9e8 1%,#2989d8 18%,#1e5799 37%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', endColorstr='#1e5799',GradientType=1 );
+        }
+
+        div#ext-element-99.x-inner.x-toolbar-inner.x-layout-hbox.headerTitle{
+        /*background-color: #457BD3  !important ;*/
+            background: -webkit-gradient(linear, left top, right top, color-stop(1%,#7db9e8), color-stop(18%,#2989d8), color-stop(37%,#1e5799));
+            background: -webkit-linear-gradient(left, #7db9e8 1%,#2989d8 18%,#1e5799 37%);
+            background: -o-linear-gradient(left, #7db9e8 1%,#2989d8 18%,#1e5799 37%);
+            background: -ms-linear-gradient(left, #7db9e8 1%,#2989d8 18%,#1e5799 37%);
+            background: linear-gradient(to right, #7db9e8 1%,#2989d8 18%,#1e5799 37%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', endColorstr='#1e5799',GradientType=1 );
+        }
+
+        /*.clientlistpage h1{*/
+        /*font-size:20px;*/
+        /*}*/
+
+        /*div#ext-tabbar-3.x-container.x-tabbar-dark.x-tabbar.x-docked-top{*/
+        /*display:none;*/
+        /*}*/
+
+        /*div#ext-container-33.x-container.x-toolbar-dark.x-toolbar.x-navigation-bar.x-docked-top{*/
+
+        /*display: none;*/
+        /*}*/
+
+        /*div#ext-titlebar-6.x-container.x-toolbar-dark.x-toolbar.x-navigation-bar.x-docked-top{*/
+        /*display: none;*/
+        /*}*/
+
+        /*div#ext-tabbar-1.x-container.x-tabbar-dark.x-tabbar.x-docked-bottom {*/
+        /*background-color: #383737 !important*/
+        /*}*/
+
+        /*div#ext-element-47.x-inner.x-tabbar-inner.x-layout-hbox{*/
+        /*background-color: #383737 !important*/
+        /*}*/
+
+
+    </style>
+    <script id="microloader" type="text/javascript" src="sdk/microloader/development.js"></script>
+    <link rel="stylesheet" href="sdk/resources/css/touch-charts-demo.css" type="text/css">
+    <link rel="stylesheet" href="sdk/resources/css/touch-charts-demo.css" type="text/css">
+    <script type="text/javascript" src="sdk/touch-charts.js"></script>
+    <script type="text/javascript" src="sdk/touch-charts.js"></script>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+</head>
+<body>
+    <div id="appLoadingIndicator">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
